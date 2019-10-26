@@ -1,9 +1,9 @@
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/HelloRequestOrBuilder.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/HelloResponse.java
 /Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/src/main/java/grpc/Server.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/HelloRequestOrBuilder.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/grpc-java/users/GreetingServiceGrpc.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/ExampleServices.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/HelloResponseOrBuilder.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/HelloResponseOrBuilder.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/grpc-java/greeter/GreetingServiceGrpc.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/Greeter.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/Sentiment.java
 /Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/src/main/java/Main.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/HelloResponse.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/HelloRequest.java
-/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/users/Sentiment.java
+/Users/guanyuyue/Develop/gitstore/mikudos/mikudos-service-java/grpc-server/target/generated-sources/protobuf/java/greeter/HelloRequest.java

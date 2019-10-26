@@ -1,4 +1,4 @@
-package users;
+package greeter;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -22,38 +22,38 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.20.0)",
-    comments = "Source: ExampleServices.proto")
+    comments = "Source: greeter/greeter.proto")
 public final class GreetingServiceGrpc {
 
   private GreetingServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "users.GreetingService";
+  public static final String SERVICE_NAME = "greeter.GreetingService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<users.HelloRequest,
-      users.HelloResponse> getGreetingMethod;
+  private static volatile io.grpc.MethodDescriptor<greeter.HelloRequest,
+      greeter.HelloResponse> getGreetingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "greeting",
-      requestType = users.HelloRequest.class,
-      responseType = users.HelloResponse.class,
+      requestType = greeter.HelloRequest.class,
+      responseType = greeter.HelloResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<users.HelloRequest,
-      users.HelloResponse> getGreetingMethod() {
-    io.grpc.MethodDescriptor<users.HelloRequest, users.HelloResponse> getGreetingMethod;
+  public static io.grpc.MethodDescriptor<greeter.HelloRequest,
+      greeter.HelloResponse> getGreetingMethod() {
+    io.grpc.MethodDescriptor<greeter.HelloRequest, greeter.HelloResponse> getGreetingMethod;
     if ((getGreetingMethod = GreetingServiceGrpc.getGreetingMethod) == null) {
       synchronized (GreetingServiceGrpc.class) {
         if ((getGreetingMethod = GreetingServiceGrpc.getGreetingMethod) == null) {
           GreetingServiceGrpc.getGreetingMethod = getGreetingMethod = 
-              io.grpc.MethodDescriptor.<users.HelloRequest, users.HelloResponse>newBuilder()
+              io.grpc.MethodDescriptor.<greeter.HelloRequest, greeter.HelloResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "users.GreetingService", "greeting"))
+                  "greeter.GreetingService", "greeting"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  users.HelloRequest.getDefaultInstance()))
+                  greeter.HelloRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  users.HelloResponse.getDefaultInstance()))
+                  greeter.HelloResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new GreetingServiceMethodDescriptorSupplier("greeting"))
                   .build();
           }
@@ -94,8 +94,8 @@ public final class GreetingServiceGrpc {
 
     /**
      */
-    public void greeting(users.HelloRequest request,
-        io.grpc.stub.StreamObserver<users.HelloResponse> responseObserver) {
+    public void greeting(greeter.HelloRequest request,
+        io.grpc.stub.StreamObserver<greeter.HelloResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGreetingMethod(), responseObserver);
     }
 
@@ -105,8 +105,8 @@ public final class GreetingServiceGrpc {
             getGreetingMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                users.HelloRequest,
-                users.HelloResponse>(
+                greeter.HelloRequest,
+                greeter.HelloResponse>(
                   this, METHODID_GREETING)))
           .build();
     }
@@ -135,8 +135,8 @@ public final class GreetingServiceGrpc {
 
     /**
      */
-    public void greeting(users.HelloRequest request,
-        io.grpc.stub.StreamObserver<users.HelloResponse> responseObserver) {
+    public void greeting(greeter.HelloRequest request,
+        io.grpc.stub.StreamObserver<greeter.HelloResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGreetingMethod(), getCallOptions()), request, responseObserver);
     }
@@ -165,7 +165,7 @@ public final class GreetingServiceGrpc {
 
     /**
      */
-    public users.HelloResponse greeting(users.HelloRequest request) {
+    public greeter.HelloResponse greeting(greeter.HelloRequest request) {
       return blockingUnaryCall(
           getChannel(), getGreetingMethod(), getCallOptions(), request);
     }
@@ -194,8 +194,8 @@ public final class GreetingServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<users.HelloResponse> greeting(
-        users.HelloRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<greeter.HelloResponse> greeting(
+        greeter.HelloRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGreetingMethod(), getCallOptions()), request);
     }
@@ -221,8 +221,8 @@ public final class GreetingServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GREETING:
-          serviceImpl.greeting((users.HelloRequest) request,
-              (io.grpc.stub.StreamObserver<users.HelloResponse>) responseObserver);
+          serviceImpl.greeting((greeter.HelloRequest) request,
+              (io.grpc.stub.StreamObserver<greeter.HelloResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -246,7 +246,7 @@ public final class GreetingServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return users.ExampleServices.getDescriptor();
+      return greeter.Greeter.getDescriptor();
     }
 
     @java.lang.Override

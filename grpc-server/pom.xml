@@ -13,7 +13,7 @@
     <artifactId>grpc-server</artifactId>
 
     <properties>
-        <main.class>com.mikudos.grpc.Server</main.class>
+        <main.class>Main</main.class>
     </properties>
 
     <build>
@@ -24,6 +24,31 @@
             </extension>
         </extensions>
         <plugins>
+            <!-- 资源文件拷贝插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <!-- here the phase you need -->
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/proto/greeter</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>../proto/greeter</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
             </plugin>
