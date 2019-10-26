@@ -19,6 +19,7 @@ greeter/GreetingServiceGrpc$GreetingServiceStub.class
 greeter/GreetingServiceGrpc$MethodHandlers.class
 greeter/HelloResponse.class
 greeter/HelloRequest.class
+grpc/service/HelloServiceImpl.class
 greeter/Sentiment$1.class
 greeter/GreetingServiceGrpc.class
 greeter/GreetingServiceGrpc$GreetingServiceImplBase.class
