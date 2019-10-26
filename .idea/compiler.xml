@@ -11,6 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="grpc-server" target="13" />
+      <module name="grpc_client" target="13" />
+      <module name="grpc_server" target="13" />
     </bytecodeTargetLevel>
   </component>
 </project>

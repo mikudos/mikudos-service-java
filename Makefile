@@ -7,10 +7,20 @@ PORT := 50051
 update-proto:
 	./update_proto.sh
 
-.PHONY:server
-server:
+.PHONY:clean
+clean:
 	mvn clean
-	mvn compile
+
+.PHONY:install
+install: clean
+	mvn install
+
+.PHONY:run-server
+run-server:
+	java -jar grpc-server/target/grpc-server-1.0-SNAPSHOT.jar
+
+.PHONY:server
+server: install run-server
 
 .PHONY:docker
 docker:

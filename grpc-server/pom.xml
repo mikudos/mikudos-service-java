@@ -16,6 +16,14 @@
         <main.class>Main</main.class>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.mikudos</groupId>
+            <artifactId>grpcclient</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <extensions>
             <extension>
