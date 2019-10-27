@@ -1,8 +1,8 @@
 # Intelli Idea
-.idea/*
+.idea
 
 # .settings
-.settings/*
+.settings
 
 # Compiled class file
 *.class
