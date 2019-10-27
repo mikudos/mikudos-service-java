@@ -21,6 +21,7 @@
 
     <modules>
         <module>grpcclient</module>
+        <module>broker</module>
         <module>grpc-server</module>
     </modules>
 

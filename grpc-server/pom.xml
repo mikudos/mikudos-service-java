@@ -19,6 +19,11 @@
     <dependencies>
         <dependency>
             <groupId>com.mikudos</groupId>
+            <artifactId>broker</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mikudos</groupId>
             <artifactId>grpcclient</artifactId>
             <version>${project.version}</version>
         </dependency>
