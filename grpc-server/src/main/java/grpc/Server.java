@@ -13,7 +13,12 @@ import com.mikudos.grpcclient.Client;
 public class Server {
     public Map config;
 
-    public void init() throws FileNotFoundException {
+    public Server() throws FileNotFoundException {
+        this.init();
+        System.out.println("server");
+    }
+
+    private void init() throws FileNotFoundException {
         //初始化Yaml解析器
         Yaml yaml = new Yaml();
         File f=new File("config/default.yaml");
@@ -24,7 +29,8 @@ public class Server {
 
     public void start() throws IOException, InterruptedException {
         io.grpc.Server server = ServerBuilder.forPort((int) this.config.get("port"))
-                .addService(new HelloServiceImpl()).build();
+                .addService(new HelloServiceImpl())
+                .build();
 
         System.out.println("Starting server...");
         server.start();
