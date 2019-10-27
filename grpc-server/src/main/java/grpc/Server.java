@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
 import com.mikudos.grpcclient.Client;
+import com.mikudos.broker.Broker;
 
 public class Server {
     public Map config;
@@ -25,6 +26,7 @@ public class Server {
         //读入文件
         this.config = yaml.load(new FileInputStream(f));
         new Client().clientEcho();
+        new Broker().echo();
     }
 
     public void start() throws IOException, InterruptedException {
